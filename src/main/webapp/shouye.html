@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, minimum-scale=0.5, user-scalable=yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/TouchSlide.1.1.js"></script>
+<title>首页</title>
+</head>
+<body>
+<div class="nav clearfix">
+	<!--头部-->
+	<div class="main_nav"><div class="bg_nav">
+		<a href="shouye.html" class="home"></a>
+		<a href="#" class="back"></a>
+	</div></div>
+	<!--/头部-->
+</div>
+<!--轮播-->
+<div id="slideBox" class="slideBox clearfix" style="padding-top:88px">
+	<div class="bd">
+		<ul>
+			<li>
+				<a class="pic" href="rongzidanbao.html"><img src="pic/rzdb.jpg" /></a>
+			</li>
+			<li>
+				<a class="pic" href="qiandaizi.html"><img src="pic/qdz.jpg"/></a>
+			</li>
+			<li>
+				<a class="pic" href="touziyimin.html"><img src="pic/tzym.jpg"/></a>
+			</li>
+			<li>
+				<a class="pic" href="xiaoedaikuan.html"><img src="pic/xedk.jpg"/></a>
+			</li>
+			<li>
+				<a class="pic" href="shijinyewu.html"><img src="pic/sjyw.jpg"/></a>
+			</li>
+		</ul>
+	</div>
+	<div class="hd">
+		<ul></ul>
+	</div>
+</div>
+<script type="text/javascript">
+	TouchSlide({
+		slideCell:"#slideBox",
+		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+		mainCell:".bd ul",
+		effect:"leftLoop",
+		autoPage:true,//自动分页
+		autoPlay:true //自动播放
+	});
+</script>
+<!--/轮播-->
+
+<!--内容-->
+<div class="content clearfix">
+	<!--产品-->
+	<div class="product">
+		<div class="clearfix">
+			<a href="rongzidanbao.html" class="rzdb floatl">融资担保</a>
+			<a href="qiandaizi.html" class="qdz floatr">钱袋子</a>
+		</div>
+		<div class="clearfix">
+			<a href="touziyimin.html" class="tzym floatl">投资移民</a>
+			<a href="xiaoedaikuan.html" class="xedk floatr">小额贷款</a>
+		</div>
+		<div class="clearfix">
+			<a href="shijinyewu.html" class="sjyw floatl">实金业务</a>
+			<a href="kehudailiren.html" class="khdlr floatr">客户代理人</a>
+		</div>
+	</div>
+	<!--/产品-->
+</div>
+<!--/内容-->
+<!--标签栏-->
+<div class="tab">
+	<ul class="clearfix">
+		<li><a href="rongzidanbao.html" class="cptj">产品推荐</a></li>
+		<li><a href="zaixianshenqing.html" class="zxsq">在线申请</a></li>
+		<li><a href="pinpaishili.html" class="ppsl">品牌实力</a></li>
+		<li><a href="gengduo.html" class="gd">更多</a></li>
+	</ul>
+</div>
+<!--/标签栏-->
+</body>
+</html>
