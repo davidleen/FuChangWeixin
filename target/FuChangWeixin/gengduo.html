@@ -4,17 +4,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, minimum-scale=0.5, user-scalable=yes" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<title>更多</title>
     <script >
-        <!-- 菜单切换功能 -->
-        function switchSub_nav( aTab) {
-            alert("aaaaaaaaaaaa");
-            aTab.class="off";
+
+        function switchSub_nav(a)
+        {
+            alert('aaaaaaaaaaaaaaaaa')
+
+         var tab_common_problem=   document.getElementById('tab_common_problem');
+            var tab_introduction=   document.getElementById('tab_introduction')
+            var tab_contact_us  = document.getElementById('tab_contact_us')
+            tab_common_problem.class=tab_common_problem==a?"on":"off"
+            tab_introduction.class="on"
+            tab_contact_us.class="on"
 
         }
 
-
     </script>
-<title>更多</title>
 </head>
 <body>
 <div class="nav">
@@ -26,9 +32,9 @@
 	<!--/头部-->
 	<!--二级导航-->
 	<div class="sub_nav">
-		<a id="tab_common_problem"    class="on" href="javascript:void(0);" onclick="switchSub_nav(this)">常见问题</a>
-		<a id="tab_introduction" href="#product_details2">公司简介</a>
-		<a id="tab_contact_us" href="#product_details3">联系我们</a>
+		<span id="tab_common_problem"   class="on"  onclick="alert('aaaaaaa')">常见问题</span>
+		<span id="tab_introduction"   onclick="switchSub_nav(this)">公司简介</span>
+		<span id="tab_contact_us"    onclick="switchSub_nav(this)" >联系我们</span>
 	</div>
 
 
@@ -88,7 +94,7 @@
 	</div>
 	<!--/公司简介-->
 	<!--联系我们-->
-	<div class="product_details" id="product_details3" style=" padding-top:130px;">
+	<div class="product_details product_details_nobg" id="product_details3" style=" padding-top:130px;">
 		<h3>联系我们</h3>
 		<div class="ppsl_ps">
 			内地总部：<br />地址：深圳市福田区南园路66号佳兆业中心A座5楼全层<br />电话：<em class="font_important font_underline">（0755）82256666</em><br />email：<em class="font_important font_underline">service@fcjrjt.com</em>

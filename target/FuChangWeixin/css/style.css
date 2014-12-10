@@ -100,15 +100,16 @@ a{ text-decoration:none; color:#ca532b;}
 .tips{color:#ca532b; font-size:24px; padding-bottom:20px; display:inline-block}
 .font_important{color:#ca532b;font-weight:bold; font-size:36px; font-style:italic;}
 
+.product_details_nobg{ background: none}
 /*  在线申请  */
-.submit_details{}
+.submit_details{ text-align: left; display: inline-block}
 .submit_details div{ padding:10px 0; clear:both; line-height:60px}
 .submit_details .form_title{text-align:right; display:block; padding-right:10px; float:left; width:230px; height:60px; font-size:28px}
 .submit_details .form_text{ border:#ccc 1px solid; width:330px; padding:10px 5px; height:40px; color:#a2a2a2; vertical-align:text-bottom; font-size:24px}
 .submit_details .form_disabled{ border:#ccc 1px solid; width:330px; padding:10px 5px; height:40px;  vertical-align:text-bottom; font-size:24px; background:#d7d7d7; color:#333}
 .submit_details select{border:#ccc 1px solid; width:340px;height:60px; color:#333; vertical-align:text-bottom; font-size:24px; background:#fff}
 .submit_details .form_content{ padding-right:20px; padding-top:10px}
-.submit_details .form_other{ margin-left:240px;}
+.submit_details .form_other{ margin-left:240px; display: block}
 /*  申请成功  */
 .submit_success{ background:url(../images/icon_submit.gif) no-repeat 50% 50px; padding:200px 30px 20px 30px; text-align:center}
 
@@ -117,7 +118,7 @@ a{ text-decoration:none; color:#ca532b;}
 .ppsl_details{ padding-bottom:100px}
 .ppsl_details p{text-align:center; text-indent:2em;text-align:left; padding:20px 10px}
 .ppsl_ps{ text-align:left; padding:20px 0}
-
+.ppsl_details img{width:100%}
 /*  常见问题  */
 .question{ text-align:left}
 .question dt .icon_question{ background:url(../images/icon_question.png) no-repeat right top; display:inline-block; width:28px; height:29px; margin-left:5px}
