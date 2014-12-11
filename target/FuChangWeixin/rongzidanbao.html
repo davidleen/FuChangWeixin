@@ -6,6 +6,21 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
     <title>融资担保</title>
 </head>
+
+<script type="text/javascript" src="js/fuchang.js"></script>
+<script  >
+
+	//切换担保分页
+	function switchSub_nav(a)
+	{
+		var tabs =new Array( $('tab_product_details1'),$('tab_product_details2'),$('tab_product_details3'))
+		var details=new Array( $('product_details1'),$('product_details2'),$('product_details3'));
+		switchTab(a,tabs,details);
+
+	}
+
+</script>
+
 <body>
 <div class="nav">
 	<!--头部-->
@@ -26,9 +41,9 @@
 	<!--/二级导航-->
 	<!--三级导航-->
 	<div class="third_nav">
-		<a href="#product_details1" class="on">诉讼保全担保</a>
-		<a href="#product_details2">企业融资担保</a>
-		<a href="#product_details3">工程履约担保</a>
+		<span id="tab_product_details1" class="on" onclick="switchSub_nav(this)" >诉讼保全担保</span>
+		<span id="tab_product_details2" onclick="switchSub_nav(this)" >企业融资担保</span>
+		<span id="tab_product_details3" onclick="switchSub_nav(this)" >工程履约担保</span>
 	</div>
 	<!--/三级导航-->
 </div>
