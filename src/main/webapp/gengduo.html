@@ -6,19 +6,43 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>更多</title>
     <script >
-
+		//获取元素的纵坐标
+		function getTop(e){
+			var offset=e.offsetTop;
+			if(e.offsetParent!=null) offset+=getTop(e.offsetParent);
+			return offset;
+		}
+		//获取元素的横坐标
+		function getLeft(e){
+			var offset=e.offsetLeft;
+			if(e.offsetParent!=null) offset+=getLeft(e.offsetParent);
+			return offset;
+		}
         function switchSub_nav(a)
         {
-            alert('aaaaaaaaaaaaaaaaa')
+
 
          var tab_common_problem=   document.getElementById('tab_common_problem');
             var tab_introduction=   document.getElementById('tab_introduction')
             var tab_contact_us  = document.getElementById('tab_contact_us')
+			var product_details1  = document.getElementById('product_details1')
+			var product_details2  = document.getElementById('product_details2')
+			var product_details3  = document.getElementById('product_details3')
 
-            tab_common_problem.class=tab_common_problem==a?style.sub_nav.on:nil;
-            tab_introduction.style
+			var tabs =new Array(tab_common_problem,tab_introduction,tab_contact_us)
+			var details=new Array(product_details1,product_details2,product_details3);
+			var count=tabs.length;
+			for (var i=0;i<count;i++)
+			{
+				var checked=tabs[i]==a;
+				tabs[i].className=checked?'on':'off'
+				if(checked)
+				{
+					window.scrollTo(0,getTop(details[i]))
+				}
 
-            tab_contact_us.class=tab_contact_us==a?"on":"off"
+			}
+
 
         }
 
