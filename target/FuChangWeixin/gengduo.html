@@ -6,17 +6,43 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>更多</title>
     <script >
-
+		//获取元素的纵坐标
+		function getTop(e){
+			var offset=e.offsetTop;
+			if(e.offsetParent!=null) offset+=getTop(e.offsetParent);
+			return offset;
+		}
+		//获取元素的横坐标
+		function getLeft(e){
+			var offset=e.offsetLeft;
+			if(e.offsetParent!=null) offset+=getLeft(e.offsetParent);
+			return offset;
+		}
         function switchSub_nav(a)
         {
-            alert('aaaaaaaaaaaaaaaaa')
+
 
          var tab_common_problem=   document.getElementById('tab_common_problem');
             var tab_introduction=   document.getElementById('tab_introduction')
             var tab_contact_us  = document.getElementById('tab_contact_us')
-            tab_common_problem.class=tab_common_problem==a?"on":"off"
-            tab_introduction.class="on"
-            tab_contact_us.class="on"
+			var product_details1  = document.getElementById('product_details1')
+			var product_details2  = document.getElementById('product_details2')
+			var product_details3  = document.getElementById('product_details3')
+
+			var tabs =new Array(tab_common_problem,tab_introduction,tab_contact_us)
+			var details=new Array(product_details1,product_details2,product_details3);
+			var count=tabs.length;
+			for (var i=0;i<count;i++)
+			{
+				var checked=tabs[i]==a;
+				tabs[i].className=checked?'on':'off'
+				if(checked)
+				{
+					window.scrollTo(0,getTop(details[i]))
+				}
+
+			}
+
 
         }
 
@@ -32,7 +58,7 @@
 	<!--/头部-->
 	<!--二级导航-->
 	<div class="sub_nav">
-		<span id="tab_common_problem"   class="on"  onclick="alert('aaaaaaa')">常见问题</span>
+		<span id="tab_common_problem"   class="on"  onclick="switchSub_nav(this)">常见问题</span>
 		<span id="tab_introduction"   onclick="switchSub_nav(this)">公司简介</span>
 		<span id="tab_contact_us"    onclick="switchSub_nav(this)" >联系我们</span>
 	</div>
