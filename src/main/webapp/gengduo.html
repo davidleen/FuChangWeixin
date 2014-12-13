@@ -1,29 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta id="viewport" name="viewport" content="width=device-width; initial-scale=0.5; user-scalable=no;" />
-	<meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=0.5" />
+<meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=no; target-densitydpi=medium-dpi "/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>更多</title>
+<script type="text/javascript" src="js/fuchang.js"></script>
+<script>
+	function switchSub_nav(a)
+	{
+		var tabs =new Array( $('tab_common_problem'),$('tab_introduction'),$('tab_contact_us'))
+		var details=new Array( $('product_details1'),$('product_details2'),$('product_details3'));
+		 switchTab(a,tabs,details);
+	}
 
-	<script type="text/javascript" src="js/fuchang.js"></script>
-    <script  >
-
-        function switchSub_nav(a)
-        {
-
-
-
-
-			var tabs =new Array( $('tab_common_problem'),$('tab_introduction'),$('tab_contact_us'))
-			var details=new Array( $('product_details1'),$('product_details2'),$('product_details3'));
-			 switchTab(a,tabs,details);
-
-
-        }
-
-    </script>
+</script>
 </head>
 <body>
 <div class="nav">
@@ -35,18 +26,16 @@
 	<!--/头部-->
 	<!--二级导航-->
 	<div class="sub_nav">
-		<span id="tab_common_problem"   class="on"  onclick="switchSub_nav(this)">常见问题</span>
+		<span id="tab_common_problem" class="on"  onclick="switchSub_nav(this)">常见问题</span>
 		<span id="tab_introduction"   onclick="switchSub_nav(this)">公司简介</span>
 		<span id="tab_contact_us"    onclick="switchSub_nav(this)" >联系我们</span>
 	</div>
-
-
 	<!--/二级导航-->
 </div>
 <!--内容-->
 <div class="content">
 	<!--常见问题-->
-	<div class="product_details" id="product_details1" style=" padding-top:130px;">
+	<div class="product_details" id="product_details1" style=" padding-top:65px;">
 		<h3>常见问题</h3>
 		<dl class="question">
 			<dt>1.申请房产贷有年龄要求吗?<span class="icon_question"></span></dt>
@@ -88,7 +77,7 @@
 	</div>
 	<!--/常见问题-->
 	<!--公司简介-->
-	<div class="product_details" id="product_details2" style=" padding-top:130px;"> 
+	<div class="product_details" id="product_details2" style=" padding-top:65px;"> 
 		<h3>公司简介</h3>
 		<p>富昌金融集团是一家大型综合性金融集团，是值得信赖的金融服务机构。其业务涵盖小额贷款、融资担保、融资租赁、投资移民、软件科技、商业顾问等，以满足各类人群的不同需要。</p>
 		<div class="ppsl_ps">
@@ -97,7 +86,7 @@
 	</div>
 	<!--/公司简介-->
 	<!--联系我们-->
-	<div class="product_details product_details_nobg" id="product_details3" style=" padding-top:130px;">
+	<div class="product_details product_details_nobg" id="product_details3" style=" padding-top:65px;">
 		<h3>联系我们</h3>
 		<div class="ppsl_ps">
 			内地总部：<br />地址：深圳市福田区南园路66号佳兆业中心A座5楼全层<br />电话：<em class="font_important font_underline">（0755）82256666</em><br />email：<em class="font_important font_underline">service@fcjrjt.com</em>
