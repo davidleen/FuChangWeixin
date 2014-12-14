@@ -1,19 +1,120 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, minimum-scale=0.5, user-scalable=yes" />
+<meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=no; target-densitydpi=medium-dpi "/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>在线申请</title>
+	<script type="text/javascript" src="js/fuchang.js"></script>
 	<script>
-		//提交在线申请数据
-		function commitApply()
+		//控制居住地文本输入是否可用
+		function residenceUpdate(e)
 		{
-			$('')
+
+
+				$('residence_edit').disabled=e!=$('residence_b')
 
 
 		}
 
+		//提交在线申请数据
+		function commitApply()
+		{
+
+
+ 				//输入验证阶段
+
+			var c_service_type=$('service_type');
+			var  serviceType=c_service_type.selectedOptions[0].value;
+
+
+			var c_user_name=$('user_name');
+			var  userName=c_user_name.value;
+			//验证姓名
+			if(trim(userName)=='')
+			{
+				alert("请输入姓名");
+				c_user_name.focus();
+				return;
+
+			}
+
+			
+			var c_user_phone=$('user_phone');
+			var userPhone=trim(c_user_phone.value);
+			//验证电话
+			if(userPhone==''||userPhone.length!=11)
+			{
+				alert("请输入11位手机号码，以便联系到您。");
+				c_user_phone.focus();
+				return;
+
+			}
+
+
+			//性别
+			var sexValue='M'
+			if($('sex_female').checked)
+			{
+				sexValue='F';
+			}
+
+			//居住地
+			var residence=$('residence_a').text;
+			if($('residence_b').checked)
+			{
+				residence=trim($('residence_edit').text);
+				if(residence=='')
+				{
+
+					alert("请输入其他居住地信息");
+					$('residence_edit').focus();
+					return;
+
+				}
+
+			}
+
+			
+
+			//职业情况
+			var c_vocation=$n('vocation');
+			var length=c_vocation.length;
+			var vocation;
+			for (var i=0;i<length;i++)
+			{
+				 if(c_vocation[i].checked)
+				 {		 vocation=c_vocation[i].value;
+				 		break;
+				 }
+			}
+
+
+
+
+			var oAjax = new XMLHttpRequest();
+			var url="aaaaaa";
+			oAjax.open('GET',url,true);
+			oAjax.send();
+			oAjax.onreadystatechange=function()
+			{
+				if(oAjax.readyState==4){
+					if(oAjax.status==200){
+						fnSucc(oAjax.responseText);
+					}else{
+						if(fnFaild){
+							fnFaild();
+						}
+					}
+				}
+			};
+
+
+
+
+
+
+		}
 
 	</script>
 </head>
@@ -27,61 +128,61 @@
 	<!--/头部-->
 </div>
 <!--内容-->
-<div class="content" style=" padding-top:100px;text-align: center">
+<div class="content" style=" padding-top:50px;text-align: center">
 	<!--在线申请-->
 	<form class="submit_details">
 		<div>
 			<label class="form_title">业务类型：</label>
-			<select name="">
-				<option>融资担保</option>
-				<option>钱袋子</option>
-				<option>投资移民</option>
-				<option>小额贷款</option>
-				<option>购买实金</option>
+			<select name="" id="service_type">
+				<option value="002">融资担保</option>
+				<option value="003" >钱袋子</option>
+				<option value="004" >投资移民</option>
+				<option  value="001" >小额贷款</option>
+				<option  value="005" >购买实金</option>
 			</select>
 		</div>
 		<div>
 			<label class="form_title">姓名：</label>
-			<input type="text" value="" class="form_text" />
+			<input type="text" id="user_name" value="" class="form_text" maxlength="50" />
 		</div>
 		<div>
 			<label class="form_title">手机号：</label>
-			<input type="text" value="" class="form_text" />
+			<input type="text" id="user_phone" value="" class="form_text" maxLength="11"  onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;" />
 		</div>
 		<div>
 			<label class="form_title">性别：</label>
 			<label class="form_content">
-				<input type="radio" value="" name="" class="input_radio" />男
+				<input type="radio" value="" name="sex"  checked="checked" class="input_radio" />男
 			</label>
 			<label class="form_content">
-				<input type="radio" value="" class="input_radio" />女
+				<input type="radio" value="" id="sex_female" name="sex" class="input_radio" />女
 			</label>
 		</div>
 		<div>
 			<label class="form_title">居住地：</label>
 			<label class="form_content">
-				<input type="radio" value="" checked="checked" class="input_radio" />深圳
+				<input type="radio" id='residence_a' value="" name="residence" checked="checked" class="input_radio"   checked="checked"  onclick="residenceUpdate(this)" />深圳
 			</label>
 			<label class="form_content">
-				<input type="radio" value="" class="input_radio" />其它
+				<input type="radio"  id='residence_b' value="" name="residence" class="input_radio"  onclick="residenceUpdate(this)"   />其它
 			</label>
-			<input type="text" value="请输入其它城市地址" class="form_disabled form_other" disabled="disabled"/>
+			<input type="text"  id='residence_edit' disabled="disabled"  value="" placeholder="请输入其它城市地址" class="form_disabled form_other"  />
 		</div>
 		<div>
 			<label class="form_title">职业状况：</label>
 			<label class="form_content">
-				<input type="radio" value="" class="input_radio" />上班族
+				<input type="radio" value="0" name="vocation" class="input_radio" checked="checked" />上班族
 			</label>
 			<label class="form_content">
-				<input type="radio" value="" class="input_radio" />企业主
+				<input type="radio" value="1"  name="vocation"  class="input_radio" />企业主
 			</label>
 			<label class="form_content">
-				<input type="radio" value="" class="input_radio" />其它
+				<input type="radio" value="2" name="vocation"  class="input_radio"   />其它
 			</label>
 		</div>
 		<div>
 			<label class="form_title">客户代理人编号：</label>
-			<input type="text" value="如A0001" class="form_text" />
+			<input type="text" placeholder="如A0001" value="" class="form_text" />
 		</div>
 	</form>
 	<!--/在线申请-->

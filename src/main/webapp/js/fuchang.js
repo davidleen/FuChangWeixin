@@ -14,36 +14,53 @@ function getLeft(e){
     return offset;
 }
 
-//自定义元素读取快速方法
+//自定义元素读取快速方法 by id
 function $(e)
 {
   return  document.getElementById(e);
 }
-
-
-
-//Tab Detail 模式 切换控制
-function switchTab(clickedTab,  tabs,  details)
+//自定义元素集合读取快速方法 by name
+function $n(e)
 {
-   assert(tabs.length!=details.length);
+    return  document.getElementsByName(e);
+}
 
-    var count=tabs.length;
-    for (var i=0;i<count;i++)
-    {
-        var checked=tabs[i]==clickedTab;
-        tabs[i].className=checked?'on':''
-        if(checked)
-        {
-            window.scrollTo(0,getTop(details[i]))
+/**
+ * Tab Detail 模式 切换控制
+ */
+
+function switchTab(clickedTab,  tabs,  details) {
+    assert(tabs.length != details.length);
+
+    var count = tabs.length;
+    for (var i = 0; i < count; i++) {
+        var checked = tabs[i] == clickedTab;
+        tabs[i].className = checked ? 'on' : ''
+        if (checked) {
+            window.scrollTo(0, getTop(details[i]))
         }
 
     }
-
-
-
 }
 function assert(hasError) {
     if(hasError)
         throw new Error("Tabs length is not equal to detail");
 
+}
+/**
+ * 删除左右两端的空格
+ * @param str
+ * @returns {XML|string|void}
+ */
+function trim(str){
+    return str.replace(/(^\s*)|(\s*$)/g, "");
+}
+
+//删除左边的空格
+function ltrim(str){
+    return str.replace(/(^\s*)/g,"");
+}
+//删除右边的空格
+function rtrim(str){
+    return str.replace(/(\s*$)/g,"");
 }
