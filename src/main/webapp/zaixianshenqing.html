@@ -3,16 +3,25 @@
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=no; target-densitydpi=medium-dpi "/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>在线申请</title>
 	<script type="text/javascript" src="js/fuchang.js"></script>
+	<!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
+	<script type="text/javascript" src="js/md5.js"></script>
 	<script>
 		//控制居住地文本输入是否可用
 		function residenceUpdate(e)
 		{
 
-
-				$('residence_edit').disabled=e!=$('residence_b')
+					var c_residence_edit=$('residence_edit');
+			var notOtherChoose=e!=$('residence_b');
+			c_residence_edit.disabled=notOtherChoose;
+			c_residence_edit.className=notOtherChoose?"form_disabled form_other":"form_text form_other"
+//			if(!notOtherChoose)
+//			{
+//				c_residence_edit.focus();
+//			}
 
 
 		}
@@ -33,7 +42,7 @@
 			//验证姓名
 			if(trim(userName)=='')
 			{
-				alert("请输入姓名");
+				alert( "请输入姓名" );
 				c_user_name.focus();
 				return;
 
@@ -60,10 +69,10 @@
 			}
 
 			//居住地
-			var residence=$('residence_a').text;
+			var residence=$('residence_a').value;
 			if($('residence_b').checked)
 			{
-				residence=trim($('residence_edit').text);
+				residence=trim($('residence_edit').value);
 				if(residence=='')
 				{
 
@@ -76,7 +85,9 @@
 			}
 
 
-			var nowDate=new Date();
+			//日期参数
+			var nowDate=(new Date()).pattern('yyyyMMddhhmmss');
+
 
 
 
@@ -92,31 +103,53 @@
 				 }
 			}
 
+			var agent=$('agent').value;
+			var checkCode=hex_md5(nowDate+serviceType+sexValue+userPhone);
 
 
 
+
+		var url=	'http://www.ffg.com.cn/api/wechat_api.php?reqdate='+nowDate+'&reqtype='
+			+serviceType+'&appname='+encodeURI(userName)+'&gender='+sexValue+'&mobile='+userPhone+
+ 			'&location='+encodeURI(residence)+'&occupation='+vocation+'&agentcode='+encodeURI(agent)+'&checkcode='+checkCode;
+
+
+
+
+			//alert(url);
 			var oAjax = new XMLHttpRequest();
-			var url="aaaaaa";
+
 			oAjax.open('GET',url,true);
 			oAjax.send();
 			oAjax.onreadystatechange=function()
 			{
 				if(oAjax.readyState==4){
 					if(oAjax.status==200){
+
 						fnSucc(oAjax.responseText);
 					}else{
-						if(fnFaild){
-							fnFaild();
-						}
+						 alert("网页异常,请重新提交")
 					}
 				}
 			};
 
 
+			window.location.href="zaixianshenqingchenggong.html"
 
 
 
+		}
 
+
+		function fnSucc(responseText)
+		{
+			if(responseText=='1')
+			{
+				window.location.href="zaixianshenqingchenggong.html"
+			}else{
+
+				alert("提交失败,请检查输入,再试.")
+			}
 		}
 
 	</script>
@@ -164,7 +197,7 @@
 		<div>
 			<label class="form_title">居住地：</label>
 			<label class="form_content">
-				<input type="radio" id='residence_a' value="" name="residence" checked="checked" class="input_radio"   checked="checked"  onclick="residenceUpdate(this)" />深圳
+				<input type="radio" id='residence_a' value="深圳" name="residence" checked="checked" class="input_radio"   checked="checked"  onclick="residenceUpdate(this)" />深圳
 			</label>
 			<label class="form_content">
 				<input type="radio"  id='residence_b' value="" name="residence" class="input_radio"  onclick="residenceUpdate(this)"   />其它
@@ -185,7 +218,7 @@
 		</div>
 		<div>
 			<label class="form_title">客户代理人编号：</label>
-			<input type="text" placeholder="如A0001" value="" class="form_text" />
+			<input id="agent" type="text" placeholder="如A0001" value="" class="form_text" />
 		</div>
 	</form>
 	<!--/在线申请-->

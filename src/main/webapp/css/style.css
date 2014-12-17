@@ -79,8 +79,8 @@ a{ text-decoration:none; color:#ca532b;}
 .nav{ position:fixed; width:100%; top:0; left:0; z-index:3}
 
 /* 二级导航 */
-.sub_nav{ height:32px; background:url(../images/subnav_bg.gif) repeat-x; text-align:center; line-height:2; z-index:2;-webkit-background-size:auto 32px;-moz-background-size:auto 32px;-ms-background-size:auto 32px;background-size:auto 32px;}
-.sub_nav span{ color:#666; font-size:12px; display:inline-block; padding:0 5px; cursor: pointer}
+.sub_nav{ height:32px; background:url(../images/subnav_bg.gif) repeat-x; text-align:center; line-height:2; z-index:2;-webkit-background-size:auto 32px;-moz-background-size:auto 32px;-ms-background-size:auto 32px;background-size:auto 32px;display:inline-block}
+.sub_nav span,.sub_nav a{ color:#666; font-size:12px; display:inline-block; padding:0 5px; cursor: pointer}
 .sub_nav .on{ color:#cd0b0b; font-size:15px}
 
 /*  三级导航  */

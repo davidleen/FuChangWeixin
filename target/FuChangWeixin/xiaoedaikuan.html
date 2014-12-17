@@ -5,6 +5,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>小额贷款</title>
+	<script type="text/javascript" src="js/fuchang.js"></script>
+	<script>
+		function switchSub_nav(a)
+		{
+			var tabs =new Array( $('tab_house'),$('tab_business') ,$('tab_jewel'))
+			var details=new Array( $('product_details1'),$('product_details2'),$('product_details3') );
+			switchTab(a,tabs,details);
+		}
+
+	</script>
 </head>
 <body>
 <div class="nav">
@@ -26,9 +36,9 @@
 	<!--/二级导航-->
 	<!--三级导航-->
 	<div class="third_nav">
-		<span class="on">房产贷</span>
-		<span>生意贷</span>
-		<span>珠宝贷</span>
+		<span class="on"  id="tab_house" onclick="switchSub_nav(this)">房产贷</span>
+		<span id="tab_business" onclick="switchSub_nav(this)" >生意贷</span>
+		<span  id="tab_jewel" onclick="switchSub_nav(this)" >珠宝贷</span>
 	</div>
 	<!--/三级导航-->
 </div>

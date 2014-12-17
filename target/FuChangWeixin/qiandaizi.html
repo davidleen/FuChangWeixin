@@ -5,7 +5,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>钱袋子</title>
+	<script type="text/javascript" src="js/fuchang.js"></script>
+	<script>
+		function switchSub_nav(a)
+		{
+			var tabs =new Array( $('tab_about'),$('tab_product') )
+			var details=new Array( $('product_details1'),$('product_details2') );
+			switchTab(a,tabs,details);
+		}
+
+	</script>
 </head>
+
 <body>
 <div class="nav">
 	<!--头部-->
@@ -26,8 +37,8 @@
 	<!--/二级导航-->
 	<!--三级导航-->
 	<div class="third_nav">
-		<span class="on">平台介绍</span>
-		<span>产品介绍</span>
+		<span class="on" id="tab_about" onclick="switchSub_nav(this)">平台介绍</span>
+		<span   id="tab_product" onclick="switchSub_nav(this)" >产品介绍</span>
 	</div>
 	<!--/三级导航-->
 </div>
