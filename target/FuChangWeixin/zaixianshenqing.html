@@ -10,6 +10,8 @@
 	<!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
 	<script type="text/javascript" src="js/md5.js"></script>
 	<script>
+
+		function checkNum(str){return str.match(/\D/)==null}
 		//控制居住地文本输入是否可用
 		function residenceUpdate(e)
 		{
@@ -52,7 +54,7 @@
 			var c_user_phone=$('user_phone');
 			var userPhone=trim(c_user_phone.value);
 			//验证电话
-			if(userPhone==''||userPhone.length!=11)
+			if(userPhone==''||userPhone.length!=11||!checkNum(userPhone))
 			{
 				alert("请输入11位手机号码，以便联系到您。");
 				c_user_phone.focus();
@@ -134,7 +136,7 @@
 			};
 
 
-			window.location.href="zaixianshenqingchenggong.html"
+
 
 
 

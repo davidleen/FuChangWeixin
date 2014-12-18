@@ -119,39 +119,43 @@ Date.prototype.pattern=function(fmt) {
 
 
 
-function configDivScrollFuction(id)
-{
+function configDivScrollFuction(id) {
 
 
-    var soucePoint;
-    var lastPoint;
-
-    //定义touchstart事件
-    $(id).addEventListener("touchstart", function(ev) {
-        ev.preventDefault();//一定要阻止默认事件
-
-        var x = ev.touches[0].pageX;//获得手指触摸点的X坐标
-        var y = ev.touches[0].pageY;//获得手指触摸点的Y坐标
-        soucePoint = new Point(x, y);
-        lastPoint = soucePoint;
-
-    }, false);
-    //定义touchmove事件
-    $(id).addEventListener("touchmove", function(ev) {
-        ev.preventDefault();
-        var x = ev.touches[0].pageX;
-        var y = ev.touches[0].pageY;
-
-        var newLeft=$(id).scrollLeft+(x - lastPoint.x);
-        if(newLeft<0) newLeft=0;
-        if(newLeft>$(id).width-$("body").width())
-        {
-            newLeft=$(id).width-$("body").width()
-        }
-        $(id).scrollLeft=newLeft ;
-        lastPoint = new Point(x, y);
-
-
-},false);
-
+    //var soucePoint;
+    //var lastPoint;
+    //
+    ////定义touchstart事件
+    //$(id).addEventListener("touchstart", function (ev) {
+    //    // ev.preventDefault();//一定要阻止默认事件
+    //    //
+    //    // var x = ev.touches[0].pageX;//获得手指触摸点的X坐标
+    //    // var y = ev.touches[0].pageY;//获得手指触摸点的Y坐标
+    //    // soucePoint = new Point(x, y);
+    //    // lastPoint = soucePoint;
+    //
+    //});
+    ////定义touchmove事件
+    //$(id).addEventListener("touchmove", function (ev) {
+    //    // ev.preventDefault();
+    //    // var x = ev.touches[0].pageX;
+    //    // var y = ev.touches[0].pageY;
+    //    //
+    //    // var newLeft=$(id).scrollLeft+(x - lastPoint.x);
+    //    // if(newLeft<0) newLeft=0;
+    //    // if(newLeft>$(id).width-$("body").width())
+    //    // {
+    //    //     newLeft=$(id).width-$("body").width()
+    //    // }
+    //    // $(id).scrollLeft=newLeft ;
+    //    // lastPoint = new Point(x, y);
+    //
+    //
+    //});
+    //
+    //$(id).addEventListener('touchend', function (e) {
+    //    //nChangY = e.changedTouches[0].pageY;
+    //    //nChangX = e.changedTouches[0].pageX;
+    //
+    //})
 }
