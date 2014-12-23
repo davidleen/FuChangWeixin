@@ -44,4 +44,5 @@ Temporary Items
 .apdisk
 
 #ignore something ide generated
-target/
+.idea
+target
