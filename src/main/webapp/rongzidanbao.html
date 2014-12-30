@@ -44,6 +44,8 @@
 	{
 //		var tabs =new Array( $('tab_common_problem'),$('tab_introduction'),$('tab_contact_us'))
 //		var details=new Array( $('product_details1'),$('product_details2'),$('product_details3'));
+
+
 		window.onscroll=null;
 		switchTab(a,tabs,details);
 		setTimeout(function(){
@@ -61,7 +63,7 @@
 
 		//监听内容滚动
 		window.onscroll = scrollListener;
-
+		configDivScrollFuction('id_sub_nav_nobr')
 	}
 
 
@@ -77,7 +79,7 @@
 	<!--/头部-->
 	<!--二级导航-->
 	<div class="sub_nav">
-		<nobr>
+		<nobr  id="id_sub_nav_nobr">
 		<a class="on" href="rongzidanbao.html">融资担保</a>
 		<a href="qiandaizi.html">钱袋子</a>
 		<a href="touziyimin.html">投资移民</a>
