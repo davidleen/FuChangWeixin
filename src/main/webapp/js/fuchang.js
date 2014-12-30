@@ -37,7 +37,11 @@ function switchTab(clickedTab,  tabs,  details) {
         var checked = tabs[i] == clickedTab;
         tabs[i].className = checked ? 'on' : ''
         if (checked) {
+
+
+
             window.scrollTo(0, getTop(details[i]))
+
         }
 
     }

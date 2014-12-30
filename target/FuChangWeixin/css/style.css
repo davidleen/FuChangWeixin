@@ -79,7 +79,7 @@ a{ text-decoration:none; color:#ca532b;}
 .nav{ position:fixed; width:100%; top:0; left:0; z-index:3}
 
 /* 二级导航 */
-.sub_nav{ height:32px; background:url(../images/subnav_bg.gif) repeat-x; text-align:center; line-height:2; z-index:2;-webkit-background-size:auto 32px;-moz-background-size:auto 32px;-ms-background-size:auto 32px;background-size:auto 32px;}
+.sub_nav{ height:32px;  background:url(../images/subnav_bg.gif) repeat-x; text-align:center; line-height:2; z-index:2;-webkit-background-size:auto 32px;-moz-background-size:auto 32px;-ms-background-size:auto 32px;background-size:auto 32px;}
 .sub_nav span,.sub_nav a{ color:#666; font-size:12px; display:inline-block; padding:0 5px; cursor: pointer}
 .sub_nav .on{ color:#cd0b0b; font-size:15px}
 
@@ -90,9 +90,9 @@ a{ text-decoration:none; color:#ca532b;}
 
 /* 产品详情 */
 .product_details{ background:url(../images/shadow.gif) repeat-x bottom; padding-bottom:40px; text-align:center; }
-.product_details h2{ color:#333;padding:5px 0}
-.product_details h2 img{ display:inline; width:25px; height:25px}
-.product_details h3{ color:#111;background:url(../images/icon_rectangle.gif) no-repeat left 5px; padding-left:7px; text-align:left; margin:15px auto 9px auto; clear:both;-webkit-background-size:auto 10px;-moz-background-size:auto 10px;-ms-background-size:auto 10px;background-size:auto 10px;}
+.product_details h2{ color:#333;padding:5px 0; font-weight:bold}
+.product_details h2 img{ display:inline; width:25px; height:30px; vertical-align:bottom}
+.product_details h3{ color:#111;background:url(../images/icon_rectangle.gif) no-repeat left 5px; padding-left:16px; text-align:left; margin:15px auto 9px auto; clear:both;-webkit-background-size:auto 10px;-moz-background-size:auto 10px;-ms-background-size:auto 10px;background-size:auto 10px;}
 .product_details p{ text-align:center; text-indent:2em;text-align:left}
 .product_details li{ text-align:left}
 .product_details li span{ background:url(../images/icon_circle.gif) no-repeat 0px 0px; width:13px; height:13px; line-height:13px; color:#fff; font-size:9px; display:inline-block; text-align:center; vertical-align:text-top; margin-right:5px;-webkit-background-size:auto 13px;-moz-background-size:auto 13px;-ms-background-size:auto 13px;background-size:auto 13px; margin-top:2px}

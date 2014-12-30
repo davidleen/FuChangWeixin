@@ -7,12 +7,56 @@
 <title>钱袋子</title>
 	<script type="text/javascript" src="js/fuchang.js"></script>
 	<script>
+
+
+
+		var tabs ;
+		var details ;
+		var tops ;
+
+		var scrollListener= function(){
+
+			var scollTop=document.body.scrollTop;
+			var windowHeight=window.innerHeight;
+			var count = tabs.length;
+			for (var i = 0; i < count; i++) {
+
+
+				tabs[i].className=( scollTop>=(tops[i]-windowHeight/2) &&(tops[i+1]-scollTop>windowHeight/2))  ?  'on' : ''
+
+			}
+
+
+
+
+		};
+
 		function switchSub_nav(a)
 		{
-			var tabs =new Array( $('tab_about'),$('tab_product') )
-			var details=new Array( $('product_details1'),$('product_details2') );
+//		var tabs =new Array( $('tab_common_problem'),$('tab_introduction'),$('tab_contact_us'))
+//		var details=new Array( $('product_details1'),$('product_details2'),$('product_details3'));
+			window.onscroll=null;
 			switchTab(a,tabs,details);
+			setTimeout(function(){
+				window.onscroll=scrollListener;
+
+			},"1000");
+
 		}
+
+		window.onload=function()
+		{
+			  tabs =new Array( $('tab_about'),$('tab_product') )
+			  details=new Array( $('product_details1'),$('product_details2') );
+			tops=new Array( getTop( $('product_details1')),getTop($('product_details2')),99999);
+
+			//监听内容滚动
+			window.onscroll = scrollListener;
+
+		}
+
+
+
 
 	</script>
 </head>

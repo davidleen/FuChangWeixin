@@ -6,13 +6,57 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>更多</title>
 <script type="text/javascript" src="js/fuchang.js"></script>
-<script>
+
+<script type="text/javascript">
+	var tabs ;
+	var details ;
+	var tops ;
+
+	var scrollListener= function(){
+
+		var scollTop=document.body.scrollTop;
+		var windowHeight=window.innerHeight;
+		var count = tabs.length;
+		for (var i = 0; i < count; i++) {
+
+
+			tabs[i].className=( scollTop>=(tops[i]-windowHeight/2) &&(tops[i+1]-scollTop>windowHeight/2))  ?  'on' : ''
+
+		}
+
+
+
+
+	};
+
 	function switchSub_nav(a)
 	{
-		var tabs =new Array( $('tab_common_problem'),$('tab_introduction'),$('tab_contact_us'))
-		var details=new Array( $('product_details1'),$('product_details2'),$('product_details3'));
+//		var tabs =new Array( $('tab_common_problem'),$('tab_introduction'),$('tab_contact_us'))
+//		var details=new Array( $('product_details1'),$('product_details2'),$('product_details3'));
+		window.onscroll=null;
 		 switchTab(a,tabs,details);
+		setTimeout(function(){
+			window.onscroll=scrollListener;
+
+		},"1000");
+
 	}
+
+	window.onload=function()
+	{
+		  tabs =new Array( $('tab_common_problem'),$('tab_introduction'),$('tab_contact_us'))
+		  details=new Array( $('product_details1'),$('product_details2'),$('product_details3'));
+		  tops=new Array( getTop( $('product_details1')),getTop($('product_details2')),getTop($('product_details3')),99999);
+
+		//监听内容滚动
+		window.onscroll = scrollListener;
+
+	}
+
+
+
+
+
 
 </script>
 </head>
