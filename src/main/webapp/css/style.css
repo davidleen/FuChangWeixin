@@ -82,6 +82,7 @@ a{ text-decoration:none; color:#ca532b;}
 .sub_nav{ height:32px;   background:url(../images/subnav_bg.gif) repeat-x; text-align:center; line-height:2; z-index:2;-webkit-background-size:auto 32px;-moz-background-size:auto 32px;-ms-background-size:auto 32px;background-size:auto 32px;}
 .sub_nav span,.sub_nav a{ color:#666; font-size:12px; display:inline-block; padding:0 5px; cursor: pointer}
 .sub_nav .on{ color:#cd0b0b; font-size:15px}
+.sub_nav nobr{height: 100%}
 
 /*  三级导航  */
 .third_nav{ text-align:center; background:#f7f6f6; z-index:1; padding:5px 0}

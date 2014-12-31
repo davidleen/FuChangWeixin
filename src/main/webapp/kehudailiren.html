@@ -12,6 +12,12 @@
 		 window.onload=function()
 		 {
 
+			 configDivScrollFuction('id_sub_nav_nobr');
+			 var maxLeft=document.body.offsetWidth-$('id_sub_nav_nobr').offsetWidth;
+			 if(maxLeft<0)
+				 $('id_sub_nav_nobr').style.marginLeft=maxLeft+"px";
+
+
 
 		 }
 

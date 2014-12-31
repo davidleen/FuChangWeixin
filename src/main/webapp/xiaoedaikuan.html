@@ -7,12 +7,6 @@
 <title>小额贷款</title>
 	<script type="text/javascript" src="js/fuchang.js"></script>
 	<script  type="text/javascript" >
-//		function switchSub_nav(a)
-//		{
-//			var tabs =new Array( $('tab_house'),$('tab_business') ,$('tab_jewel'))
-//			var details=new Array( $('product_details1'),$('product_details2'),$('product_details3') );
-//			switchTab(a,tabs,details);
-//		}
 
 		var tabs ;
 		var details ;
@@ -56,7 +50,7 @@
 
 			//监听内容滚动
 			window.onscroll = scrollListener;
-
+			configDivScrollFuction('id_sub_nav_nobr')
 		}
 
 
@@ -73,7 +67,7 @@
 	<!--/头部-->
 	<!--二级导航-->
 	<div class="sub_nav">
-		<nobr>
+		<nobr id="id_sub_nav_nobr">
 		<a href="rongzidanbao.html">融资担保</a>
 		<a href="qiandaizi.html">钱袋子</a>
 		<a href="touziyimin.html">投资移民</a>

@@ -6,7 +6,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <title>钱袋子</title>
 	<script type="text/javascript" src="js/fuchang.js"></script>
-	<script>
+	<script type="text/javascript" >
 
 
 
@@ -53,6 +53,10 @@
 			//监听内容滚动
 			window.onscroll = scrollListener;
 
+
+
+						configDivScrollFuction('id_sub_nav_nobr')
+
 		}
 
 
@@ -71,7 +75,7 @@
 	<!--/头部-->
 	<!--二级导航-->
 	<div class="sub_nav">
-		<nobr>
+		<nobr id="id_sub_nav_nobr">
 		<a href="rongzidanbao.html">融资担保</a>
 		<a class="on" href="qiandaizi.html">钱袋子</a>
 		<a href="touziyimin.html">投资移民</a>
