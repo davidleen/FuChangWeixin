@@ -152,9 +152,12 @@ function configDivScrollFuction(id) {
 
 
         var  distanceX=x - lastPointX;
-        if(Math.abs(distanceX)>2&&!prevented)
+        if(!prevented)
         {
-            prevented=true;
+
+
+            if(Math.abs(distanceX)>2)
+                    prevented=true;
 
         }
         if(prevented)
