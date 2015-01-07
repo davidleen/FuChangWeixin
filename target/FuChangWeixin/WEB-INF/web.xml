@@ -24,6 +24,6 @@
 
 	<servlet-mapping>
 		<servlet-name>version-dispatcher</servlet-name>
-		<url-pattern>*.v11</url-pattern>
+		<url-pattern>*.redirect</url-pattern>
 	</servlet-mapping>
 </web-app>

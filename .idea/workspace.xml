@@ -2,25 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff92c78-00da-4ab2-9eee-5d7ea0f6eb4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/fuchang/weixin/VersionController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/version-dispatcher-servlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/tongruiruanjian.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin.war" afterPath="$PROJECT_DIR$/target/FuChangWeixin.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/fuchang.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/fuchang.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/gengduo.html" afterPath="$PROJECT_DIR$/src/main/webapp/gengduo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/gengduo.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/gengduo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/kehudailiren.html" afterPath="$PROJECT_DIR$/src/main/webapp/kehudailiren.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/kehudailiren.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/kehudailiren.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/pinpaishili.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/pinpaishili.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/qiandaizi.html" afterPath="$PROJECT_DIR$/src/main/webapp/qiandaizi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/qiandaizi.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/qiandaizi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/rongzidanbao.html" afterPath="$PROJECT_DIR$/src/main/webapp/rongzidanbao.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/rongzidanbao.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/rongzidanbao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/shijinyewu.html" afterPath="$PROJECT_DIR$/src/main/webapp/shijinyewu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/shijinyewu.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/shijinyewu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/shouye.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/shouye.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/css/style.css" afterPath="$PROJECT_DIR$/target/FuChangWeixin/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/touziyimin.html" afterPath="$PROJECT_DIR$/src/main/webapp/touziyimin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/touziyimin.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/touziyimin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/FuChangWeixin/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/xiaoedaikuan.html" afterPath="$PROJECT_DIR$/src/main/webapp/xiaoedaikuan.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/xiaoedaikuan.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/xiaoedaikuan.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/zaixianshenqing.html" afterPath="$PROJECT_DIR$/src/main/webapp/zaixianshenqing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/zaixianshenqing.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/zaixianshenqing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/FuChangWeixin/zaixianshenqingchenggong.html" afterPath="$PROJECT_DIR$/target/FuChangWeixin/zaixianshenqingchenggong.html" />
     </list>
     <ignored path="FuChangWeixin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,9 +50,11 @@
       <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fuchang/weixin/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+            <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="342">
               <caret line="8" column="23" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="23" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,11 +62,10 @@
       <file leaf-file-name="VersionController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fuchang/weixin/VersionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+            <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="304">
               <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,7 +74,7 @@
       <file leaf-file-name="version-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/version-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+            <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="570">
               <caret line="21" column="44" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="44" />
               <folding />
             </state>
@@ -82,38 +84,8 @@
       <file leaf-file-name="hello.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="190">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rongzidanbao.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/rongzidanbao.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="3230">
-              <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fuchang.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/fuchang.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2634" max-vertical-offset="3610">
-              <caret line="160" column="0" selection-start-line="165" selection-start-column="37" selection-end-line="165" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fuchang.js" pinned="false" current-in-tab="false">
-        <entry file="file://D:/360安全浏览器下载/FuChangWeixin/FuChangWeixin/js/fuchang.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2496" max-vertical-offset="3553">
-              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,18 +94,48 @@
       <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+            <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="570">
               <caret line="11" column="53" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6206323" vertical-offset="45" max-vertical-offset="646">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
               <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zaixianshenqingchenggong.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/zaixianshenqingchenggong.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="836">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tongruiruanjian.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/tongruiruanjian.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1425">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gengduo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/gengduo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6785714" vertical-offset="0" max-vertical-offset="3135">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,7 +146,23 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="1415" max-vertical-offset="24168">
               <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#0#56847#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#17138#17139#0" expanded="false" />
+                <element signature="e#17152#17153#0" expanded="false" />
+                <element signature="e#19502#19503#0" expanded="false" />
+                <element signature="e#19537#19538#0" expanded="false" />
+                <element signature="e#23239#23240#0" expanded="false" />
+                <element signature="e#23292#23293#0" expanded="false" />
+                <element signature="e#23425#23426#0" expanded="false" />
+                <element signature="e#23455#23456#0" expanded="false" />
+                <element signature="e#34984#34985#0" expanded="false" />
+                <element signature="e#35020#35021#0" expanded="false" />
+                <element signature="e#45907#46036#0" expanded="false" />
+                <element signature="e#46035#46036#0" expanded="false" />
+                <element signature="e#55780#55788#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -259,7 +277,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -462,7 +480,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,11 +513,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\GitHub\FuChangWeixin\src\main\webapp" />
       <recent name="C:\Users\Administrator\Documents\GitHub\FuChangWeixin\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Administrator\Documents\GitHub\FuChangWeixin\src\main\webapp\js" />
       <recent name="D:\workspace\webApps\FuChangWeixin\src\main\webapp\js" />
       <recent name="D:\workspace\webApps\FuChangWeixin\src\main\webapp" />
-      <recent name="D:\workspace\webApps\FuChangWeixin\src\main\webapp\css" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fuchang.weixin" />
@@ -970,6 +988,7 @@
       <workItem from="1420429076226" duration="374000" />
       <workItem from="1420431895500" duration="349000" />
       <workItem from="1420432507756" duration="4547000" />
+      <workItem from="1420600225095" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="add ignore">
       <created>1418289389897</created>
@@ -987,7 +1006,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138380000" />
+    <option name="totallyTimeSpent" value="139085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1051,11 +1070,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/rongzidanbao.html</url>
-          <line>65</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/fuchang/weixin/VersionController.java</url>
           <line>12</line>
@@ -1072,11 +1086,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/focusBg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/images/xedk.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1228,85 +1237,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/qiandaizi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="3135">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/shijinyewu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.285715" vertical-offset="456" max-vertical-offset="1159">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/touziyimin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.464286" vertical-offset="1" max-vertical-offset="1387">
-          <caret line="14" column="9" selection-start-line="10" selection-start-column="4" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/xiaoedaikuan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.785714" vertical-offset="114" max-vertical-offset="3230">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/zaixianshenqingchenggong.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.392858" vertical-offset="263" max-vertical-offset="836">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/zaixianshenqing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.892858" vertical-offset="1994" max-vertical-offset="4731">
-          <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pinpaishili.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="950">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1767">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/gengduo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="789" max-vertical-offset="3135">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/kehudailiren.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1919">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1558" max-vertical-offset="2945">
           <caret line="82" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,14 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327787" vertical-offset="31378" max-vertical-offset="91219">
           <caret line="1662" column="23" selection-start-line="1662" selection-start-column="23" selection-end-line="1662" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/rongzidanbao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="3230">
-          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,7 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="57.0" vertical-offset="1539" max-vertical-offset="13091">
           <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,7 +1285,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1415" max-vertical-offset="24168">
           <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#0#56847#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#17138#17139#0" expanded="false" />
+            <element signature="e#17152#17153#0" expanded="false" />
+            <element signature="e#19502#19503#0" expanded="false" />
+            <element signature="e#19537#19538#0" expanded="false" />
+            <element signature="e#23239#23240#0" expanded="false" />
+            <element signature="e#23292#23293#0" expanded="false" />
+            <element signature="e#23425#23426#0" expanded="false" />
+            <element signature="e#23455#23456#0" expanded="false" />
+            <element signature="e#34984#34985#0" expanded="false" />
+            <element signature="e#35020#35021#0" expanded="false" />
+            <element signature="e#45907#46036#0" expanded="false" />
+            <element signature="e#46035#46036#0" expanded="false" />
+            <element signature="e#55780#55788#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1376,7 +1317,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1385,8 +1328,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1409,8 +1351,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6206323" vertical-offset="45" max-vertical-offset="646">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/zaixianshenqingchenggong.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tongruiruanjian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/gengduo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6785714" vertical-offset="0" max-vertical-offset="3135">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
