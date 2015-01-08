@@ -119,8 +119,69 @@ Date.prototype.pattern=function(fmt) {
     return fmt;
 }
 
+/**
+ * 禁止横向滚动，阻止浏览器带动内容滚动
+ * @param id
+ */
+function preventContentScroll(element)
+{
 
 
+    var lastPointX;
+    var lastPointY;
+    var  prevented=false;
+    //定义touchstart事件
+    element.addEventListener("touchstart", function (ev) {
+        //  ev.preventDefault();//一定要阻止默认事件
+        //
+        prevented=false;
+        lastPointX = ev.touches[0].pageX;//获得手指触摸点的X坐标
+        lastPointY=ev.touches[0].pageY;
+
+
+    });
+    //定义touchmove事件
+    element.addEventListener("touchmove", function (ev) {
+        //
+
+
+
+
+
+        if(!prevented)
+        {
+
+            var x = ev.touches[0].pageX;
+            var y=ev.touches[0].pageY;
+            var  distanceX=x - lastPointX;
+            var distanceY=y-lastPointY;
+
+            if(Math.abs(distanceX)>Math.abs(distanceY))
+                prevented=true;
+
+            lastPointX =x;//获得手指触摸点的X坐标
+            lastPointY=y;
+
+        }
+        if(prevented)
+            ev.preventDefault();
+
+
+
+
+    });
+
+    element.addEventListener('touchend', function (e) {
+
+
+        if(prevented)
+            ev.preventDefault();
+
+
+    })
+
+
+}
 
 
 function configDivScrollFuction(id) {
